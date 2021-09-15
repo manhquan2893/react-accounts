@@ -1,0 +1,28 @@
+.layout{
+  .page-header{
+    font-size: 24px;
+    font-weight: 500;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    background-color: rgb(49, 111, 206);
+    color: #fff;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    .sidebar{
+      padding: 16px 32px;
+      max-width: 300px;
+      border-right: 1px solid #cdcdcd;
+      height: calc(100vh - 60px);
+      .link-to-user{
+        
+      }
+    }
+    .main-content{
+      padding: 16px 32px;
+    }
+  }
+}
