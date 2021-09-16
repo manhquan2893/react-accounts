@@ -1,41 +1,9 @@
 .user-search-page{
   width: 400px;
-  .table{
-    .cell{
-      padding-left: 8px;
-      height: 25px;
-      display: flex;
-      align-items: center;
-    }
-    .head{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      .name{
-        border-right: 1px solid #cdcdcd;
-        border-bottom: 1px solid #cdcdcd;
-        
-      }
-      .accounts{
-        border-bottom: 1px solid #cdcdcd;
-      }
-    }
-    .body{
-      .row{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        .name{
-          border-right: 1px solid #cdcdcd;
-          border-bottom: 1px solid #cdcdcd;
-        }
-        .account-item{
-          border-bottom: 1px solid #cdcdcd;
-        }
-        .accounts{
-          .account-item{
-
-          }
-        }
-      }
+  .ant-btn-primary{
+    background-color: #316fce;
+    span{
+      color: #fff;
     }
   }
 }

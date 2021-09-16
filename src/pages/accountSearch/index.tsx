@@ -12,7 +12,7 @@ function AccountSearchPage() {
       key: 'id',
     },
     {
-      title: 'Account',
+      title: 'Name',
       dataIndex: 'name',
       key: 'name',
     },
@@ -47,11 +47,11 @@ function AccountSearchPage() {
   useEffect(()=>{
     getAccount()
   }
-  ,[])
+  ,[getAccount])
 
   return (
     <div className="account-search-page">
-      <Table dataSource={accounts} columns={columns} />;
+      <Table dataSource={accounts} columns={columns} />
     </div>
   )
 }
