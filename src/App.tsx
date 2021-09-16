@@ -11,6 +11,7 @@ import GlobalLoading from './components/common/GlobalLoading';
 
 import 'antd/dist/antd.css';
 import './global.scss'
+import "./translations/i18n";
 
 function App() {
   // @ts-ignore

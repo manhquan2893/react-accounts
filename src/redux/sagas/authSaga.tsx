@@ -9,10 +9,10 @@ type loginActionType = {
 }
 
 function* onLogin(action: loginActionType):any {
-  
   const myPromise = new Promise((resolve,reject)=>{
     setTimeout(()=>{
       if(action.credential.username !== 'Roman' || action.credential.password !== '@'){
+        console.log(action)
         reject('something went wrong')
       }
       else{
@@ -24,7 +24,7 @@ function* onLogin(action: loginActionType):any {
     const data = yield myPromise
     yield(put(loginSuccessAction()))
   } catch (error) {
-    toast.warn('text')
+    toast.warn('Username or Password is wrong')
     yield(put(loginFailedAction()))
   }
 }

@@ -1,4 +1,3 @@
-import { toast } from "react-toastify"
 import { LOGIN, LOGIN_SUCCESS, LOGIN_FAILED, LOGOUT } from "./actionTypes"
 
 export type CredentialType = {
